@@ -1,0 +1,80 @@
+/*
+  Some custom styles
+  to use.
+*/
+
+body {
+  background-color: #222255;
+}
+
+/* NAVBAR COLOR */
+.navbar {
+  background-color: #335;
+}
+
+/* CONTAINER */
+#main-container {
+  margin: 3rem auto 9rem auto;
+}
+
+/* INFO VIEW */
+.info-view {
+  border-radius: .3rem;
+}
+
+/* FILES VIEW */
+.files {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.file {
+  background-color: #445;
+
+}
+
+/* Links for the footer */
+.links {
+  width: 50%;
+}
+
+
+/* RESPONSIVE DESING */
+@media (max-width: 900px) {
+  .files {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media (max-width: 700px) {
+  .files {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  #download-title /* only move to center bar and title*/ {
+    text-align: center;
+
+  }
+
+  #bar-title {
+    width: 100%;
+    margin: 0rem auto 5rem auto;
+
+  }
+
+  .files {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    width: 100%;
+  }
+  
+}

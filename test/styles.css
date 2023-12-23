@@ -1,0 +1,124 @@
+/* Styles for the page */
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border-spacing: border-box;
+}
+
+
+body {
+  /* background-color: #44b; */
+  background: url('./img/background.jpg');
+}
+
+
+/* CARD FOR THE NAME */
+.card {
+  padding: 3rem;
+  /* background-color: #448; */
+  background-color: rgba(0, 0, 0, .5);
+  margin: 3rem auto;
+  width: 50%;
+  border: 1px solid #444;
+}
+
+.card label, .card input {
+  display: block;
+}
+
+.card label {
+  color: #fff;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card input {
+  padding: .2rem;
+}
+
+#input-view {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#input-view input {
+  margin: 1rem auto;
+}
+
+#button-view {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card button {
+  text-align: center;
+  width: 30%;
+  border-style: none;
+  padding: .5rem;
+  background-color: #bbc;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background-color: #bba;
+}
+
+#image-button {
+  border-style: none;
+  padding: 0;
+  background-color: #000;
+}
+
+#image-button img {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+
+/* FOOTER */
+#main-footer {
+  margin-top: 5%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+#text-info {
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .card button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 90%;
+  }
+  .card button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+  }
+
+  .card button {
+    width: 40%;
+  }
+}

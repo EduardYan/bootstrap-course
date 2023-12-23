@@ -1,0 +1,104 @@
+/* Styles for the website 
+of the nav */
+
+body {
+  background: #444 url('./img/paisajeMon.jpg') no-repeat center bottom;
+  background-size: cover;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #558888;
+  transition: opacity .4s ease;
+}
+
+.navbar:hover {
+  opacity: .9;
+}
+
+/* Logo for navbar */
+#logo-image {
+  width: 15%;
+  border-radius: .1rem;
+}
+
+
+/* Targets */
+.target {
+  font-size: 1.5rem;
+  border-radius: .2rem;
+  animation-name: moveTargets;
+  animation-duration: 1s;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.target:hover {
+  box-shadow: .4rem .5rem 2px #777;
+}
+
+/* key frames for move the targets */
+@keyframes moveTargets {
+  0% {
+    background-color: #000;
+  }
+
+  100% {
+    transform: translateX(-5%);
+    background-color: #f00;
+  }
+}
+
+/* View table for the data */
+.view-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  margin-top: 5rem;
+}
+
+.view-data table {
+  border-collapse: collapse;
+
+}
+
+.view-data table tr th,
+.view-data table tr td {
+  border: .6px #222 solid;
+  padding: 1rem;
+}
+
+.view-data table tr th:hover,
+.view-data table tr td:hover {
+  cursor: pointer;
+
+}
+
+.view-data table tr td {
+  transition: background-color .3s ease;
+}
+
+.view-data table tr td:hover {
+  background-color: #336633;
+}
+
+
+/* Footer info */
+.info {
+  color: #aaa;
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+#learn-more-button:active {
+  background-color: #bbeeee;
+
+}
+#learn-more-button:visited {
+  background-color: #aacccc;
+
+}
+
+footer {
+  margin-top: 10rem;
+}

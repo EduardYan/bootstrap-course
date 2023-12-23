@@ -1,0 +1,93 @@
+/*
+ *
+ * Some custom styles
+*/
+
+body {
+  background-color: #777;
+}
+
+.container {
+  margin: 5rem auto 8rem auto;
+}
+
+/* TITLE */
+h1 {
+  margin-top: 7rem;
+}
+
+/* VIEW OF BUTTONS */
+.view-buttons {
+  width: 60%;
+  margin: 1rem auto 5rem auto;
+  border-radius: 0.4rem;
+}
+
+/* BANNER */
+.banner {
+  background-color: #3333aa;
+}
+
+.game {
+  transition: opacity 0.3s ease;
+  border-radius: 0.4rem;
+}
+
+.game:hover {
+  opacity: 0.9;
+}
+
+/* for move the element, testing yet */
+/* .move {
+  animation-name: moveGame;
+  animation-duration: .5s;
+
+}*/
+
+@keyframes moveGame {
+  0% {
+    transform: translateX(1%);
+  }
+
+  100% {
+    transform: translateX(2%);
+  }
+}
+
+/* FOOTER */
+.footer {
+  background-color: #444;
+}
+
+.footer a {
+  width: 50%;
+  margin: 2rem 25%;
+}
+
+@media (max-width: 900px) {
+  .view-buttons {
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 700px) {
+  body {
+    background-color: #0f0;
+  }
+  
+} */
+
+@media (max-width: 500px) {
+  .view-buttons button {
+    margin: .2rem 0;
+  }
+
+  h1 {
+    margin-top: 12rem;
+  }
+
+  .footer a {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alerts.</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <style>
+      body {
+        background: #444 url("./img/myImage.jpg") no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body class="container p-5">
+    <div class="alert alert-danger">
+      <strong>Message</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eaque, corporis natus. Quas quibusdam porro cupiditate
+      nihil maxime libero, id minima natus consectetur! Facilis sint laborum rem
+      nulla amet reprehenderit aut?
+      <a class="alert-link" href="#">Click aqui.</a>
+    </div>
+
+    <div class="alert alert-secondary">
+      <strong>Message</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eaque, corporis natus. Quas quibusdam porro cupiditate
+      nihil maxime libero, id minima natus consectetur! Facilis sint laborum rem
+      nulla amet reprehenderit aut?
+      <a class="alert-link" href="#">Click aqui.</a>
+    </div>
+
+    <div class="alert alert-success">
+      <strong>Message</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eaque, corporis natus. Quas quibusdam porro cupiditate
+      nihil maxime libero, id minima natus consectetur! Facilis sint laborum rem
+      nulla amet reprehenderit aut?
+      <a class="alert-link" href="#">Click aqui.</a>
+    </div>
+
+    <div class="alert alert-warning">
+      <strong>Message</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eaque, corporis natus. Quas quibusdam porro cupiditate
+      nihil maxime libero, id minima natus consectetur! Facilis sint laborum rem
+      nulla amet reprehenderit aut?
+      <a class="alert-link" href="#">Click aqui.</a>
+    </div>
+    <div class="alert alert-info">
+      <strong>Message</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eaque, corporis natus. Quas quibusdam porro cupiditate
+      nihil maxime libero, id minima natus consectetur! Facilis sint laborum rem
+      nulla amet reprehenderit aut?
+      <a class="alert-link" href="#">Click aqui.</a>
+    </div>
+
+    <div class="alert alert-dark">
+      <strong>Message</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eaque, corporis natus. Quas quibusdam porro cupiditate
+      nihil maxime libero, id minima natus consectetur! Facilis sint laborum rem
+      nulla amet reprehenderit aut?
+      <a class="alert-link" href="#">Click aqui.</a>
+    </div>
+
+    <div class="alert alert-dark">
+      <h3>Title</h3>
+      <strong>Message</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eaque, corporis natus. Quas quibusdam porro cupiditate
+      nihil maxime libero, id minima natus consectetur! Facilis sint laborum rem
+      nulla amet reprehenderit aut?
+      <a class="alert-link" href="#">Click aqui.</a>
+    </div>
+
+    <!-- WITH BUTTON -->
+    <div
+      class="alert alert-warning alert-dismissible fade show my-4"
+      role="alert"
+    >
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div
+      class="alert alert-success alert-dismissible fade show my-4"
+      role="alert"
+    >
+      <strong>Hello</strong>
+      This is a text to show in a alert You can use like a example. <br />
+      And you will visit this
+      <a class="alert-link" href="https://youtube.com">link</a>.
+      <button
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+      <strong>Other</strong> <br />
+      <p>Other message to show now.</p>
+      <button
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div
+      class="alert alert-secondary alert-dismissible fade show"
+      role="alaert"
+    >
+      <strong>Hi this is a test for a alert.</strong>
+      <button
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Clode"
+      ></button>
+    </div>
+
+    <div
+      class="alert alert-dismissible alert-primary fade show d-flex justify-content-between"
+      role="alert"
+    >
+      <strong>Buy this product</strong>
+      <div>
+        <img src="./img/myImage.jpg" alt="product-image" width="100" />
+      </div>
+      <a
+        class="alert-link"
+        href="https://wwww.google.com/search?q=learn+more"
+        target="_blank"
+        rel="noreferrer"
+        >Learn More</a
+      >
+      <button
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- <ul class="list-group mb-4">
+    <li class="list-group-item list-group-item-primary">
+      <p>This is some to show</p>
+    </li>
+  </ul> -->
+
+    <!-- PROGRESS BAR -->
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%"></div>
+    </div>
+
+    <br /><br />
+
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 75%"></div>
+    </div>
+
+    <br /><br />
+
+    <div class="progress">
+      <div class="progress-bar bg-danger" style="width: 25%"></div>
+    </div>
+
+    <div class="progress">
+      <div
+        class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+        style="width: 60%"
+      ></div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

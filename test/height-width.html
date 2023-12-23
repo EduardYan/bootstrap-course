@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Height and Width.</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <style>
+      header button {
+        margin: 2rem 0 2rem 25%;
+      }
+
+      .tables {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 2rem;
+        background-color: #6666ff;
+        border-radius: 0.5rem;
+      }
+
+      .table {
+        border-collapse: collapse;
+      }
+
+      .table tr th,
+      .table tr td {
+        border: 0.5px solid #222;
+        padding: 0.4rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .table tr th:hover {
+        cursor: pointer;
+        background-color: #6b7;
+      }
+
+      .table tr td:hover {
+        cursor: pointer;
+        background-color: #7275ff;
+      }
+
+      .buttons-view {
+        background-color: #5a5a5a;
+        margin: 0 35%;
+        border-radius: 0.5rem;
+      }
+
+      .view-content {
+        display: flex;
+      }
+
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="bg-primary my-5 mx-auto p-3 container">
+      <header class="">
+        <h1 class="text-white text-center text-info">Running</h1>
+        <button class="btn btn-dark w-50" id="click-me-button">
+          Click Me !
+        </button>
+      </header>
+
+      <section class="my-4 p-3 tables">
+        <table class="text-center table">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+        </table>
+        <table class="text-center table">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+        </table>
+        <table class="text-center table">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+        </table>
+        <table class="text-center table">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>12</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="btn-group p-3 buttons-view">
+        <button class="btn btn-danger mx-3">1</button>
+        <button class="btn btn-danger mx-3">2</button>
+        <button class="btn btn-danger mx-3">3</button>
+        <button class="btn btn-danger mx-3">4</button>
+        <button class="btn btn-danger mx-3">5</button>
+      </section>
+
+      <section class="my-5 view-content">
+        <div class="mx-1 p-2 bg-success content">
+          <p class="h2">Data 1</p>
+          <p class="lead text-white text-justify my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat officia odit dolorem tempora adipisci, aliquid quisquam laudantium ducimus ullam, esse earum. Expedita enim dolore vero doloribus aliquid distinctio reprehenderit nisi hic odit eius vitae necessitatibus facere recusandae cumque, illum blanditiis quas rem totam eligendi impedit iure sed. Assumenda sint tempora, non, itaque sequi repellendus officia commodi similique, eaque odit magni deserunt. Delectus officia accusantium odit fugiat officiis, natus facilis aut, quia, excepturi eaque omnis modi aliquid recusandae sunt eum a beatae explicabo neque id cumque. Iure error voluptates mollitia delectus, labore aut magnam soluta facilis modi expedita est. Ipsa, eligendi?</p>
+
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+        <div class="mx-1 p-2 bg-dark content">
+          <p class="h2 text-white">Data 1</p>
+          <p class="lead text-white text-justify my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat officia odit dolorem tempora adipisci, aliquid quisquam laudantium ducimus ullam, esse earum. Expedita enim dolore vero doloribus aliquid distinctio reprehenderit nisi hic odit eius vitae necessitatibus facere recusandae cumque, illum blanditiis quas rem totam eligendi impedit iure sed. Assumenda sint tempora, non, itaque sequi repellendus officia commodi similique, eaque odit magni deserunt. Delectus officia accusantium odit fugiat officiis, natus facilis aut, quia, excepturi eaque omnis modi aliquid recusandae sunt eum a beatae explicabo neque id cumque. Iure error voluptates mollitia delectus, labore aut magnam soluta facilis modi expedita est. Ipsa, eligendi?</p>
+
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+        <div class="mx-1 p-2 bg-warning content">
+          <p class="h2">Data 1</p>
+          <p class="lead text-white text-justify my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat officia odit dolorem tempora adipisci, aliquid quisquam laudantium ducimus ullam, esse earum. Expedita enim dolore vero doloribus aliquid distinctio reprehenderit nisi hic odit eius vitae necessitatibus facere recusandae cumque, illum blanditiis quas rem totam eligendi impedit iure sed. Assumenda sint tempora, non, itaque sequi repellendus officia commodi similique, eaque odit magni deserunt. Delectus officia accusantium odit fugiat officiis, natus facilis aut, quia, excepturi eaque omnis modi aliquid recusandae sunt eum a beatae explicabo neque id cumque. Iure error voluptates mollitia delectus, labore aut magnam soluta facilis modi expedita est. Ipsa, eligendi?</p>
+
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+        <div class="mx-1 p-2 bg-danger content">
+          <p class="h2">Data 1</p>
+          <p class="lead text-white text-justify my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat officia odit dolorem tempora adipisci, aliquid quisquam laudantium ducimus ullam, esse earum. Expedita enim dolore vero doloribus aliquid distinctio reprehenderit nisi hic odit eius vitae necessitatibus facere recusandae cumque, illum blanditiis quas rem totam eligendi impedit iure sed. Assumenda sint tempora, non, itaque sequi repellendus officia commodi similique, eaque odit magni deserunt. Delectus officia accusantium odit fugiat officiis, natus facilis aut, quia, excepturi eaque omnis modi aliquid recusandae sunt eum a beatae explicabo neque id cumque. Iure error voluptates mollitia delectus, labore aut magnam soluta facilis modi expedita est. Ipsa, eligendi?</p>
+
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+      const showAlert = (message) => {
+        alert(message);
+      };
+
+      $("#click-me-button").click(() => showAlert("Clicked"));
+
+      const buttonsList = document.querySelectorAll(".buttons-view button");
+      buttonsList.forEach((button) => {
+        button.addEventListener("click", () =>
+          showAlert(`Button ${button.innerText} Clicked`)
+        );
+      });
+
+      const buttonsListLearn = document.querySelectorAll(".view-content button");
+      buttonsListLearn.forEach((button) => {
+        button.addEventListener("click", () =>
+          showAlert('This is a message for learn more')
+        );
+      });
+    </script>
+  </body>
+</html>

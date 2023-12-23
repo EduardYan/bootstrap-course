@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test with Center.</title>
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="../bootstrap.min.css">
+
+  <style>
+    html {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #click-button {
+      animation-name: moveButtons;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-direction: alternate;
+    }
+
+
+    @keyframes moveButtons {
+      0% {
+        transform: translateX(-5%);
+      }
+
+      100% {
+        transform: translateX(5%);
+      }
+
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">Test</a>
+
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/more">More</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container p-3 bg-light my-5">
+    <h1 class="text-dark text-center mb-3" id="title">Running</h1>
+
+    <p class="mb-4 text-dark text-center">Click a button</p>
+
+    <!-- FOR CENTER A ELEMENT ADD OTHER ELEMENT, WITH CLASSES,
+    WITH THE CLASS text-center, for center the other element -->
+    <section class="w-100 mx-auto text-center mb-5">
+      <button class="btn btn-outline-primary w-50 my-3" id="click-button">
+        Click
+      </button>
+      <button class="btn btn-outline-warning w-50 my-3" id="click-button">
+        Click
+      </button>
+      <button class="btn btn-outline-danger w-50 my-3" id="click-button">
+        Click
+      </button>
+      <button class="btn btn-outline-dark w-50 my-3" id="click-button">
+        Click
+      </button>
+
+    </section>
+
+
+    <section class="view-info bg-dark text-white p-3">
+
+
+      <h3 class="display-4 mb-4">More Information</h3>
+
+      <p class="text-center text-sm-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam odio
+        aliquam at ipsam quidem officia impedit consequatur laborum veritatis? Unde aliquid quidem ipsa delectus odit
+        minima illum reprehenderit, dicta odio cum consequatur voluptatem maiores necessitatibus iusto suscipit mollitia
+        numquam quae eos. Accusantium fuga officiis eos at facilis asperiores? Voluptates provident, aliquam esse harum
+        numquam quidem maiores voluptas deleniti ex odit voluptatem voluptatum, ipsa rerum earum, temporibus blanditiis
+        atque! Nobis quod, molestias iure pariatur enim aliquid inventore distinctio. Pariatur officiis ut delectus
+        maxime iusto deserunt voluptas. Quae voluptatem quos sint tempora reiciendis doloremque, repellendus adipisci
+        ipsa in, aperiam vero eligendi labore.</p>
+
+      <div class="w-100 text-center mx-auto">
+        <a class="btn btn-warning my-4 w-50" href="#">
+          Learn More
+        </a>
+      </div>
+
+    </section>
+
+    <ol class="list-group mt-5 w-50 mx-auto text-center">
+      <li class="list-group-item list-group-item-success">
+        <a class="btn btn-success" href="#">First Element</a>
+      </li>
+      <li class="list-group-item list-group-item-danger">
+        <a class="btn btn-danger" href="#">Second Element</a>
+
+      </li>
+      <li class="list-group-item list-group-item-primary">
+
+        <a class="btn btn-primary" href="#">Third Element</a>
+
+      </li>
+      <li class="list-group-item list-group-item-info">
+
+        <a class="btn btn-info" href="#">Fourth Element</a>
+
+      </li>
+      <li class="list-group-item list-group-item-dark">
+
+        <a class="btn btn-dark" href="#">Fifth Element</a>
+      </li>
+
+      <li class="list-group-item list-group-item-secondary">
+        <a class="btn btn-secondary" href="#">Sixty Element</a>
+      </li>
+
+
+    </ol>
+
+  </div>
+
+
+  <script type="text/javascript">
+    const getClickedButtons = () => {
+      // getting buttons
+      const listButtons = document.querySelectorAll('#click-button');
+
+      return listButtons;
+
+    }
+
+    const showAlert = (message) => {
+      /*
+      const container = document.querySelector('.container');
+      const title = document.getElementById('title');
+
+      let alertElement = document.createElement('div');
+      alertElement.innerText = 'Clicked';
+      alertElement.className = 'alert alert-danger text-white';
+      container.appendChild(alertElement)
+      */
+      alert(message);
+
+    }
+
+    const listButtons = getClickedButtons()
+    const message = 'Clicked';
+
+    listButtons.forEach((button) => {
+      button.addEventListener('click', () => showAlert(message));
+    })
+
+
+  </script>
+
+</body>
+
+</html>

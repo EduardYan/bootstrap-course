@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <!-- STYLE -->
+    <style>
+      .tables {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+      }
+
+      .view table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .view table tr th,
+      .view table tr td {
+        border: 0.5px solid #232323;
+        padding: 0.7rem;
+      }
+
+      .view button {
+        width: 100%;
+      }
+
+      .view .diferent tr th,
+      .view .diferent tr td {
+        border-color: #ccc;
+      }
+
+      .info {
+        width: 100%;
+      }
+
+      .target-success {
+        background-color: #33aa33;
+      }
+
+      .target-success:hover {
+        background-color: #338833;
+      }
+
+      .target-danger {
+        background-color: #aa3333;
+      }
+
+      .target-danger:hover {
+        background-color: #883333;
+      }
+
+      .more {
+        transition: box-shadow 0.3s ease;
+      }
+
+      .more:hover {
+        box-shadow: 1rem 0.5rem rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+
+  <body class="bg-primary">
+    <div class="container mt-3 bg-dark">
+      <section class="tables">
+        <p class="p-4 text-muted">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
+          delectus itaque debitis eius, quis minima soluta laboriosam modi hic
+          praesentium iusto placeat ipsum cumque est veritatis accusamus
+          molestiae illo a repellendus perspiciatis provident? Harum
+          necessitatibus magni quasi ad ullam vel fugiat dolore obcaecati illo?
+          Consectetur commodi non repellendus quasi, omnis accusamus est eos.
+          Neque ad animi, maiores et dolorum vitae mollitia dolorem, dolor
+          repudiandae dolore distinctio eveniet, corporis incidunt minima
+          reiciendis a est rerum officia. Laboriosam quam qui fuga vero
+          deleniti, dolorum aliquid possimus et voluptatibus tenetur excepturi
+          nobis expedita, laborum quae neque corrupti rerum atque illum
+          asperiores laudantium ducimus accusantium. Cumque nam deserunt animi
+          blanditiis dolores consectetur amet, earum voluptatibus explicabo
+          corporis facere accusantium? Vitae possimus ea iusto perferendis
+          voluptas, deserunt magnam illo sint tenetur ex optio eaque ipsam
+          doloribus, excepturi, omnis nemo voluptatum iste. Illum ea repudiandae
+          ad aliquam asperiores qui nihil facilis et quidem officia. Et
+          architecto asperiores ducimus ipsa voluptas quod ea quasi. Error iusto
+          reprehenderit obcaecati, illo iste quia, et labore aliquam in autem,
+          quaerat quod aliquid nobis! Iure nulla asperiores mollitia quod, nobis
+          eveniet odio eaque atque adipisci quidem sequi. Ullam, praesentium!
+          Vitae quia nemo assumenda architecto, voluptatibus optio voluptas sint
+          accusantium ab debitis enim ducimus vero inventore consectetur impedit
+          eveniet deserunt! Similique ullam sapiente, non veniam vitae
+          accusantium possimus neque rerum ducimus nemo veritatis, error dolorem
+          adipisci molestiae quod quas ipsa quasi deserunt provident quia.
+          Veniam cumque architecto dolores, molestiae dignissimos voluptate odit
+          quae deserunt error. Sapiente totam labore veniam culpa expedita
+          consequatur aut velit aperiam rerum minus quisquam possimus,
+          laudantium minima? Voluptas non omnis incidunt adipisci dolores
+          exercitationem iste, aperiam, quidem vero quaerat reprehenderit nobis
+          dicta, recusandae a quam nihil repellendus est impedit aut eius! Quia,
+          excepturi! Labore eaque a eum sint ut libero voluptatem laborum alias
+          provident ea debitis laudantium id aliquid ab et quas dolor cumque
+          modi fuga est natus, quibusdam doloremque. Quia nesciunt quod modi
+          recusandae consectetur, magnam quasi neque voluptatum vero, optio
+          eveniet cumque id natus enim atque ipsam officia culpa ad qui?
+          Adipisci velit esse maxime iusto! Explicabo quis doloribus illo? Quas
+          animi quae, tempore iste error sunt dolor modi, aliquid odio nulla
+          doloribus facere deleniti corporis ut aut ratione porro saepe earum,
+          numquam ea eligendi illo totam eveniet ex! Accusamus maxime quisquam
+          provident rem totam minima expedita, id odit excepturi aut nemo
+          accusantium optio eos, nam doloremque deleniti repellendus atque
+          pariatur repellat voluptatum quidem autem aliquam! Accusantium labore
+          repellat laborum quisquam ex praesentium illum consequatur cupiditate
+          porro, culpa assumenda, placeat nisi, facilis sequi saepe! Facilis
+          itaque tenetur eveniet modi libero numquam officiis aliquid mollitia
+          similique fugit! Ex vel modi corporis quae doloribus. Dolores fugit
+          consequatur, inventore, sint aperiam voluptates repellat voluptate
+          obcaecati quae architecto, quisquam voluptatum minus. Minus, nemo
+          blanditiis iusto fugit quod, possimus fuga vero aliquam ullam deleniti
+          explicabo a maxime vitae velit consequatur voluptas corrupti
+          temporibus repellat consequuntur est harum ab fugiat odit neque. Cum
+          eaque recusandae aspernatur earum ipsa quod nostrum repudiandae eos
+          animi enim rem aperiam, voluptatem possimus natus? Cupiditate, culpa
+          possimus!
+        </p>
+
+        <div class="view">
+          <table class="mt-5 text-dark bg-warning">
+            <tr class="bg-dark">
+              <th class="text-center text-primary">Peoples</th>
+              <th class="text-center text-primary">Age</th>
+            </tr>
+
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+          </table>
+
+          <button class="btn btn-primary mt-4 mb-5">Click</button>
+
+          <table class="text-danger bg-sucess diferent">
+            <tr class="bg-warning">
+              <th class="text-center text-primary">Peoples</th>
+              <th class="text-center text-primary">Age</th>
+            </tr>
+
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td class="text-center">10 - 50</td>
+            </tr>
+          </table>
+
+          <button class="btn btn-secondary mt-4 mb-5">Click</button>
+        </div>
+      </section>
+
+      <div class="info mt-3 p-2">
+        <section class="target-success p-3 mb-3">
+          <p class="lead text-center">Congrulations, you finished.</p>
+        </section>
+
+        <section class="target-danger p-3 mb-6">
+          <p class="lead text-center">Other thing</p>
+        </section>
+      </div>
+
+      <div class="mt-3 ml-auto more bg-info p-4">
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam autem
+          eius, rem amet id suscipit quis cupiditate porro, ipsum quo quae neque
+          reprehenderit veritatis nostrum, perspiciatis nemo error atque sit?
+          Debitis recusandae explicabo temporibus quia. Quis omnis eos animi
+          sapiente iste reprehenderit dicta voluptatibus veritatis accusamus
+          cumque tenetur sed quisquam aliquam vel iure cum eveniet ipsum saepe
+          consequatur sunt, enim quaerat? Distinctio quibusdam ex quo repellat
+          corrupti qui vitae minima totam ea iure. Alias sunt maxime qui. Ipsum,
+          exercitationem minima eius soluta, repellat corporis, amet totam
+          pariatur repudiandae eligendi deserunt distinctio reiciendis mollitia
+          consequuntur quis quod sit molestias reprehenderit dolores.
+        </p>
+      </div>
+    </div>
+
+    <script src="../bootstrap.min.js"></script>
+  </body>
+</html>

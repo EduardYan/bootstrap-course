@@ -1,0 +1,45 @@
+/* Styles for the vertical nav */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #ccc;
+  height: 100%;
+  width: 20%;
+
+}
+
+.navbar-left, .navbar-right {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar-right li a {
+  margin-right: .8rem;
+  
+}
+
+/* The content */
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: 10rem;
+}
+
+
+
+/* 700pixels */
+@media(max-width: 700px) {
+  body {
+    background: #f00;
+  }
+
+  .navbar-right li {
+    margin-top: .4rem;
+    
+  }
+}

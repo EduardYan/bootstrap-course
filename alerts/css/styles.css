@@ -1,0 +1,17 @@
+/*
+  Custom styles to use
+*/
+
+body {
+  background-color: #77aa77;
+}
+
+/* CONTAINER */
+.container {
+  margin: 3rem auto 6rem auto;
+}
+
+.button-view {
+  background-color: #7777aa;
+  border-radius: .5rem;
+}

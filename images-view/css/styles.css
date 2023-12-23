@@ -1,0 +1,59 @@
+/*
+  Custom styles to use.
+*/
+
+body {
+  background-color: #356064;
+}
+
+/* LINKS OF NAVIGATION */
+.nav-link:hover {
+  border-bottom: 0.1px solid #ccc;
+}
+
+/* PRINCIPAL CONTAINER */
+#principal-container {
+  margin: 3rem auto 7rem auto;
+  background-color: #5e8286;
+  border-radius: 4px;
+}
+
+/* IMAGES SECTION */
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 2rem;
+}
+
+/* IMAGE */
+.images img {
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.images img:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 2px #444;
+}
+
+/* RESPONSIVE DESING */
+@media (max-width: 900px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .images {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .images {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+  }
+}

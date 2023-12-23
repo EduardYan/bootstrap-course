@@ -1,0 +1,122 @@
+/*
+  Styles for the page.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* No spacing to use */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #a2a2cc; */
+  background-image: url("../img/background.png");
+  background-size: cover;
+}
+
+/* Container */
+#main-container {
+  width: 90%;
+  margin: 4rem auto;
+}
+
+/* Titles */
+#title-list {
+  color: #ffffff;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#title {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
+#info {
+  color: #ffffff;
+}
+
+/* Content List */
+#content-list {
+  width: 20%;
+  margin: 0 auto 2rem auto;
+}
+
+#content-list li {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#content-list li a:visited {
+  color: #555;
+}
+
+#content-list li a:hover {
+  color: #e00;
+}
+
+#content-list li a:active {
+  color: #ee0;
+}
+
+/* links */
+.links {
+  margin: 2rem 0 3rem 0;
+}
+
+#links a {
+  display: block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #222;
+  border: 0.5px dotted #000;
+  padding: 1rem;
+  background-color: #929277;
+  animation: moveLinks 2s infinite alternate;
+  transition: box-shadow 0.3s ease;
+  transition: cursor 0.3s ease;
+  text-align: center !important;
+}
+
+#links a:hover {
+  cursor: pointer;
+  box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+/* Thanks message */
+#thanks-message {
+  margin-top: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+#thanks-message:hover {
+  border-bottom: 0.5px solid #bbbbbb;
+}
+
+
+@keyframes moveLinks {
+  /* Only move the little */
+  0% {
+    transform: translateX(2%);
+  }
+
+  100% {
+    transform: translateX(-2%);
+  }
+}
+
+/* Responsive */
+/* @media screen {
+  
+} */

@@ -1,0 +1,110 @@
+/*
+  Principal styles for the page.
+*/
+
+/* Variables */
+:root {
+  /* color for the background */
+  --bcolor: #525252;
+  --nav-footer-color: #559;
+  --tree-color: #779;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: var(--bcolor) url("../img/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* NAVIGATION */
+.navbar {
+  background-color: var(--nav-footer-color);
+  opacity: 0.9;
+}
+
+/* CONTAINER */
+#main-container {
+  margin: 3rem auto 10rem;
+}
+
+/* CARDS */
+.info {
+  background-color: #939393;
+  opacity: .9;
+}
+
+#trees {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+}
+
+#trees article {
+  background: var(--tree-color);
+  transition: box-shadow .3s ease;
+}
+
+#trees article:hover {
+  box-shadow: .4rem .4rem 5px #555;
+
+}
+
+/* IMAGE FOR THE TREE CARD */
+#trees img {
+  width: 100%;
+}
+
+/* ESPECIAL TEXTS */
+.especial-text {
+  text-decoration: underline;
+
+}
+
+.new-text {
+  color: #f88;
+  margin-right: 1rem;
+}
+
+/* MAIN FOOTER */
+#main-footer {
+  background-color: var(--nav-footer-color);
+  opacity: .9;
+}
+
+/* LINKS FOR THE CONTACTS */
+#links a {
+  font-size: 3rem;
+  /* margin: 0 .5rem; */
+  text-decoration: none;
+}
+
+
+/* RESPONSIVE DESING */
+@media (max-width: 900px) {
+  #trees {
+    /* change to one column */
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  #trees {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  #trees {
+    grid-template-columns: 1fr;
+  }
+}

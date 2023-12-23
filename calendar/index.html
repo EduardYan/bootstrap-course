@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/glDatePicker.default.css" />
+    <title>Calendar</title>
+    <style>
+      body {
+        background-color: #525253;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="display-4 text-center text-white">Calendar</h1>
+      <hr class="text-white" />
+
+      <article class="card my-5 bg-secondary">
+        <div class="card-header">
+          <label class="text-white d-block text-center" for="mydate"
+            >Select a Date</label
+          >
+        </div>
+        <div class="card-body mx-auto text-center">
+          <input class="text-info" type="text" id="mydate" gldp-id="mydate" />
+        </div>
+
+        <div class="card-footer text-center">
+          <button class="btn btn-info" type="button" id="send-button">
+            Send
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/glDatePicker.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
